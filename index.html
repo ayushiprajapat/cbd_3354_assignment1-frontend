@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS with Custom Theme -->
+    <link 
+        rel="stylesheet" 
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    >
+    <link rel="stylesheet" href="styles.css"> <!-- Link to custom CSS -->
+    <title>Assignment 1</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4 text-secondary">Assignment 1</h1>
+        <div class="row mb-5">
+            <!-- Register User Section -->
+            <div class="col-md-6">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-primary text-white">
+                        <h3 class="mb-0">Register User</h3>
+                    </div>
+                    <div class="card-body">
+                        <form id="register-form">
+                            <div class="form-group">
+                                <input 
+                                    type="text" 
+                                    id="username" 
+                                    class="form-control" 
+                                    placeholder="Username" 
+                                    required
+                                >
+                            </div>
+                            <div class="form-group">
+                                <input 
+                                    type="password" 
+                                    id="password" 
+                                    class="form-control" 
+                                    placeholder="Password" 
+                                    required
+                                >
+                            </div>
+                            <button 
+                                type="submit" 
+                                class="btn btn-primary btn-block"
+                            >
+                                Register
+                            </button>
+                        </form>
+                        <h5 class="mt-4 text-secondary">Users List</h5>
+                        <div 
+                            id="users-list" 
+                            class="list-group overflow-auto" 
+                            style="max-height: 200px;"
+                        ></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Upload File Section -->
+            <div class="col-md-6">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-success text-white">
+                        <h3 class="mb-0">Upload File</h3>
+                    </div>
+                    <div class="card-body">
+                        <form id="upload-form">
+                            <div class="form-group">
+                                <input 
+                                    type="file" 
+                                    id="file" 
+                                    class="form-control-file" 
+                                    required
+                                >
+                            </div>
+                            <button 
+                                type="submit" 
+                                class="btn btn-success btn-block"
+                            >
+                                Upload
+                            </button>
+                        </form>
+                        <h5 class="mt-4 text-secondary">Uploaded Files</h5>
+                        <div 
+                            id="files-list" 
+                            class="list-group overflow-auto" 
+                            style="max-height: 200px;"
+                        ></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script 
+        src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+        integrity="sha384-DfXdJd/nGVC1XXifYtCkPj/WS6wOWquHJm39UcQ/jqDqIo1eVjlZZiLTqImCTWQ/" 
+        crossorigin="anonymous"
+    ></script>
+    <script 
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" 
+        integrity="sha384-9/reFTGAW83EW2RDu4quD/tieXkE06Xw5v5lIx9LUHgvIyhFWubW6U8rf08cJXTT" 
+        crossorigin="anonymous"
+    ></script>
+    <script 
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" 
+        integrity="sha384-B0UglyR+Ly2OH7dQq4G29e25E9L+rOnm20Pz6d/lx0jprHp1hVQOGEzTmNekosJ3" 
+        crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+</body>
+</html>
